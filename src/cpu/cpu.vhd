@@ -16,11 +16,11 @@ entity CPU is
 		-- BUSES
 		DIN : in std_logic_vector (7 downto 0);
 		DOUT : in std_logic_vector (7 downto 0);
-		ADDR : out std_logic_vector (15 downto 0);
+		ADDR : out std_logic_vector (15 downto 0) := "0000000000000000";
 		R_W : out std_logic; -- Bit for reading and writing; 0 - Write, 1 - Read
-		RAM_ENABLE : out std_logic;
-		PPU_ENABLE : out std_logic;
-		CART_ENABLE : out std_logic;
+		RAM_ENABLE : out std_logic := '0';
+		PPU_ENABLE : out std_logic := '0';
+		CART_ENABLE : out std_logic := '0';
 		
 		IRQ : in std_logic; -- Interrupt pin (Negative logic)
 		NMI : in std_logic; -- Non Maskable Interrupt Pin (Negative logic)
@@ -110,6 +110,7 @@ architecture processor of CPU is
 		(
 			FETCH_CODE,
 			FETCH_FROM_ADDR,
+			FETCH_ZERO_PAGE,
 			FETCH_LOW_BYTE,
 			FETCH_HIGH_BYTE,
 			USE_VALUE,
@@ -124,8 +125,8 @@ architecture processor of CPU is
 	
 	-- Registers
 	-- Special purpose
-	signal PC : integer range 0 to 65535; -- Program Counter (Might change this later. Just very inconvenient to do converesions between unsigned integers and std_logic vector)
-	signal SP : integer range 0 to 255; -- Stack pointer (The stack has 256 entries)
+	signal PC : integer range 0 to 65535 := 0; -- Program Counter (Might change this later. Just very inconvenient to do converesions between unsigned integers and std_logic vector)
+	signal SP : integer range 0 to 255 := 0; -- Stack pointer (The stack has 256 entries)
 	signal P : std_logic_vector (7 downto 0) := "00000000"; -- Status register
 	signal IR : opcode; -- Instruction register (Hods the current instruction
 	
@@ -139,6 +140,9 @@ architecture processor of CPU is
 	signal mode : addr_mode;
 	
 	signal address : std_logic_vector (15 downto 0); 
+	
+	signal low_byte : std_logic_vector (7 downto 0);
+	signal high_byte : std_logic_vector (7 downto 0);
 	
 begin
 	
@@ -210,7 +214,23 @@ begin
 						
 						
 					when ZERO_PAGE =>
-						AD1 <= '0'; -- stubbed command
+						case IR is
+							when LDA =>
+								if curr_op = FETCH_ZERO_PAGE then
+									address <= std_logic_vector(to_unsigned(PC, 16));
+									
+								elsif curr_op = FETCH_FROM_ADDR then
+									address <= std_logic_vector("00000000" & low_byte);
+								
+								end if;
+								
+								R_W <= '1';
+							
+							when others =>
+								R_W <= '1';
+						
+						end case;
+						
 					when I_ZERO_PAGE_X =>
 						AD1 <= '0';
 					when I_ZERO_PAGE_Y =>
@@ -273,6 +293,12 @@ begin
 						IR <= LDA;
 						curr_op <= USE_VALUE;
 						mode <= IMMEDIATE;
+						PC <= PC + 1;
+					
+					when x"A5" =>
+						IR <= LDA;
+						curr_op <= FETCH_ZERO_PAGE;
+						mode <= ZERO_PAGE;
 						PC <= PC + 1;
 					
 					when x"A2" =>
@@ -518,7 +544,23 @@ begin
 						
 						
 					when ZERO_PAGE =>
-						AD1 <= '0'; -- stubbed command
+						case IR is
+						
+							when LDA =>
+								if curr_op = FETCH_ZERO_PAGE then
+									low_byte <= DIN;
+									curr_op <= FETCH_FROM_ADDR;
+								elsif curr_op = FETCH_FROM_ADDR then
+									A <= DIN;
+									PC <= PC + 1;
+									curr_op <= FETCH_CODE;
+								end if;
+								
+							when others =>
+								PC <= PC;
+						
+						end case;
+						
 					when I_ZERO_PAGE_X =>
 						AD1 <= '0';
 					when I_ZERO_PAGE_Y =>
@@ -570,7 +612,7 @@ begin
 	
 	ADDR <= address;
 	
-	RAM_ENABLE <=  '1' when (address(14) = '0' and address(13) = '0') else
+	RAM_ENABLE <=  '1' when address < x"2000" else
 						'0';
 	
 	A_reg <= A;

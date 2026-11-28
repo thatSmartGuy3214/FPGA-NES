@@ -103,6 +103,12 @@ begin
 			d <= x"A9";
 			wait for wait_time;
 			d <= x"01";
+			wait for wait_time;
+			d <= x"A5";
+			wait for wait_time;
+			d <= x"F0";
+			wait for wait_time;
+			d <= x"F1";
 
 
 --			wait for wait_time;

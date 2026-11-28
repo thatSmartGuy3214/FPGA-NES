@@ -1,15 +1,20 @@
 Task list
 
 CPU Opcode testing:
-Test: #
+Test: 
 
 Addressing modes:
 Immediate: Done!
 Immediate tests: Almost done
 
 
-Zero Page: To do next
-Zero Page testing: Have not started
+Zero Page: Not Done
+Zero Page testing: Not started
 
 
 APU Work:
+...
+
+Cartridges
+- Testing is becoming slightly more tedious, so I need to create my own test cartridge. 
+- So, read up on cartridges and how they interact with the CPU, then have a test cartridge for testing!

@@ -10,7 +10,7 @@ entity RAM is
 	port (		
 		DIN: in std_logic_vector (7 downto 0);
 		DOUT: out std_logic_vector (7 downto 0);
-		ADDR : in std_logic_vector (15 downto 0);
+		ADDR : in std_logic_vector (15 downto 0) := "0000000000000000";
 		RD : in std_logic;
 		WRT : in std_logic;
 		ENABLE : in std_logic;
@@ -22,16 +22,30 @@ end RAM;
 
 architecture reg of RAM is
 	type mem is array (0 to 2047) of std_logic_vector (7 downto 0); -- 2KB memory
+--	signal data : mem := (
+--		0      => x"A9",
+--		1      => x"0F",
+--		2      => x"A5",
+--		3      => x"0F",
+--		15     => x"FF",
+--		others => x"00"
+--	);
+
 	signal data : mem;
+	
+	
 	signal loc : integer range 0 to 2047;
 	signal output : std_logic_vector (7 downto 0);
 	
 	signal control : std_logic_vector (2 downto 0);
 	
+	
+	
 
 begin
 
 	loc <= to_integer(unsigned(ADDR));
+				
 	control <= ENABLE & RD & WRT;
 	
 	output <= data(loc) when control = "110" else

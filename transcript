@@ -1,34 +1,13 @@
-# Compile of NES.vhd was successful.
-# Compile of cpu.vhd failed with 1 errors.
-# Compile of cpu_test.vhd failed with 1 errors.
-# Compile of ram_test.vhd was successful with warnings.
-# Compile of ram.vhd was successful.
-# 5 compiles, 2 failed with 2 errors.
-# Compile of NES.vhd was successful.
-# Compile of cpu.vhd was successful.
-# Compile of cpu_test.vhd failed with 1 errors.
-# Compile of ram_test.vhd was successful with warnings.
-# Compile of ram.vhd was successful.
-# 5 compiles, 1 failed with 1 error.
-# Compile of NES.vhd was successful.
-# Compile of cpu.vhd was successful.
 # Compile of cpu_test.vhd was successful with warnings.
-# Compile of ram_test.vhd was successful with warnings.
-# Compile of ram.vhd was successful.
-# 5 compiles, 0 failed with no errors.
 vsim -gui work.cpu_test
 # vsim -gui work.cpu_test 
-# Start time: 13:02:03 on Nov 28,2026
+# Start time: 14:24:13 on Nov 28,2026
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading work.cpu_test(test)
 # Loading work.cpu(processor)
-# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/PPU_ENABLE has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/CART_ENABLE has no driver.
-# This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OE1 has no driver.
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OE2 has no driver.
@@ -43,25 +22,22 @@ vsim -gui work.cpu_test
 # This port will contribute value (U) to the signal network.
 add wave -position end  sim:/cpu_test/clock
 add wave -position end  sim:/cpu_test/d
+add wave -position end  sim:/cpu_test/addr
 add wave -position end  sim:/cpu_test/a
-add wave -position end  sim:/cpu_test/b
-add wave -position end  sim:/cpu_test/c
-add wave -position end  sim:/cpu_test/p
+add wave -position end  sim:/cpu_test/end_sim
 run
+# Load canceled
 # Compile of NES.vhd was successful.
 # Compile of cpu.vhd was successful.
 # Compile of cpu_test.vhd was successful with warnings.
 # Compile of ram_test.vhd was successful with warnings.
 # Compile of ram.vhd was successful.
-# 5 compiles, 0 failed with no errors.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.cpu_test(test)
 # Loading work.cpu(processor)
-# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/PPU_ENABLE has no driver.
-# This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/CART_ENABLE has no driver.
-# This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OE1 has no driver.
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OE2 has no driver.
@@ -78,5 +54,732 @@ run
 # GetModuleFileName: The specified module could not be found.
 # 
 # 
-# End time: 13:08:34 on Nov 28,2026, Elapsed time: 0:06:31
-# Errors: 0, Warnings: 9
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd failed with 2 errors.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd failed with 1 errors.
+# 6 compiles, 1 failed with 1 error.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.cpu_ram_test
+# End time: 14:31:14 on Nov 28,2026, Elapsed time: 0:07:01
+# Errors: 0, Warnings: 10
+# vsim -gui work.cpu_ram_test 
+# Start time: 14:31:14 on Nov 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/cpu_ram_test/clock
+add wave -position end  sim:/cpu_ram_test/d
+add wave -position end  sim:/cpu_ram_test/addr
+add wave -position end  sim:/cpu_ram_test/a
+add wave -position end  sim:/cpu_ram_test/read_write
+add wave -position end  sim:/cpu_ram_test/not_r_w
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ram_test/dut2
+add wave -position end  sim:/cpu_ram_test/enable_control
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd failed with 1 errors.
+# 6 compiles, 1 failed with 1 error.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd failed with 1 errors.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 1 failed with 1 error.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd failed with 5 errors.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 1 failed with 5 errors.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ram_test/dut2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful with warnings.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful with warnings.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful with warnings.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd failed with 1 errors.
+# Compile of cpu_ram_test.vhd failed with 1 errors.
+# 6 compiles, 2 failed with 2 errors.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd failed with 1 errors.
+# Compile of cpu_ram_test.vhd failed with 1 errors.
+# 6 compiles, 2 failed with 2 errors.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/cpu_ram_test/t_addr
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd failed with 1 errors.
+# 6 compiles, 1 failed with 1 error.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd failed with 1 errors.
+# 6 compiles, 1 failed with 1 error.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+add wave -position end  sim:/cpu_ram_test/t_addr
+restart
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd failed with 1 errors.
+# Compile of cpu_ram_test.vhd failed with 5 errors.
+# 6 compiles, 2 failed with 6 errors.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/cpu_ram_test/test
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+vsim -gui work.ram
+# End time: 14:58:47 on Nov 28,2026, Elapsed time: 0:27:33
+# Errors: 0, Warnings: 8
+# vsim -gui work.ram 
+# Start time: 14:58:47 on Nov 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ram(reg)
+add wave -position end  sim:/ram/DIN
+add wave -position end  sim:/ram/DOUT
+add wave -position end  sim:/ram/ADDR
+add wave -position end  sim:/ram/RD
+add wave -position end  sim:/ram/WRT
+add wave -position end  sim:/ram/ENABLE
+force -freeze sim:/ram/ENABLE 0 0
+add wave -position end  sim:/ram/data
+run
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd failed with 1 errors.
+# Compile of cpu_ram_test.vhd failed with 1 errors.
+# 6 compiles, 2 failed with 2 errors.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd failed with 1 errors.
+# 6 compiles, 1 failed with 1 error.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# Compile of cpu_ram_test.vhd was successful with warnings.
+# 6 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.ram(reg)
+vsim -gui work.cpu_ram_test
+# End time: 15:05:38 on Nov 28,2026, Elapsed time: 0:06:51
+# Errors: 0, Warnings: 1
+# vsim -gui work.cpu_ram_test 
+# Start time: 15:05:38 on Nov 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu_ram_test(test)
+# Loading work.cpu(processor)
+# Loading work.ram(reg)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_ram_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/cpu_ram_test/clock
+add wave -position end  sim:/cpu_ram_test/d
+add wave -position end  sim:/cpu_ram_test/addr
+add wave -position end  sim:/cpu_ram_test/enable_control
+add wave -position end  sim:/cpu_ram_test/read_write
+add wave -position end  sim:/cpu_ram_test/not_r_w
+add wave -position end  sim:/cpu_ram_test/a
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /cpu_ram_test/dut2
+# End time: 15:08:40 on Nov 28,2026, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 8

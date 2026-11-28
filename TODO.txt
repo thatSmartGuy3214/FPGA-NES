@@ -1,0 +1,15 @@
+Task list
+
+CPU Opcode testing:
+Test: #
+
+Addressing modes:
+Immediate: Done!
+Immediate tests: Almost done
+
+
+Zero Page: To do next
+Zero Page testing: Have not started
+
+
+APU Work:

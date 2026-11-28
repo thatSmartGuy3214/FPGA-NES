@@ -4,10 +4,9 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-
 entity NES is
 	port (
-		clk : in std_logic
+		master_clk : in std_logic
 	);
 
 end NES;
@@ -16,7 +15,11 @@ end NES;
 
 architecture NES_arch of NES is
 
+	
+	
 begin
+
+	
 	
 
 end NES_arch;

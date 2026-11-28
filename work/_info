@@ -1,0 +1,267 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Ecpu
+Z0 w1795863656
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 310
+Z4 dC:/Users/kftsh/Documents/FPGA NES
+Z5 8C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu.vhd
+Z6 FC:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu.vhd
+l0
+L11 1
+V[ei90_]WEU2:i5<Y5WG?z0
+!s100 :_<fhfODJP4Bb[8P0fZ3i3
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1795864033
+!i10b 1
+Z9 !s108 1795864033.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-suppress|1339|-stats=none|C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu.vhd|
+Z11 !s107 C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu.vhd|
+!i113 1
+Z12 o-suppress 1339 -work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Aprocessor
+R1
+R2
+R3
+DEx4 work 3 cpu 0 22 [ei90_]WEU2:i5<Y5WG?z0
+!i122 310
+l143
+L85 497
+V95n76hlF:HS>Mf5M5hY:V0
+!s100 37b2j7`d5LIBeODi^=a[L2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecpu_test
+Z14 w1795864020
+R1
+R2
+R3
+!i122 311
+R4
+Z15 8C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu_test.vhd
+Z16 FC:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu_test.vhd
+l0
+L5 1
+V[CikQPakCG<dHaWSgMaZj0
+!s100 i;RoZB<NO:4R2em5EOglh3
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu_test.vhd|
+Z18 !s107 C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu_test.vhd|
+!i113 1
+Z19 o-work work -2002 -explicit
+R13
+Atest
+R1
+R2
+R3
+DEx4 work 8 cpu_test 0 22 [CikQPakCG<dHaWSgMaZj0
+!i122 311
+l71
+L10 164
+VgN9k`o?_V=@J7HP5UNDnc1
+!s100 >cDm5oY^X<z2bHK6eg2aR3
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R19
+R13
+Eflow_check
+R0
+R1
+R2
+R3
+!i122 310
+R4
+R5
+R6
+l0
+L59 1
+V26TK?D8TN`ComdcXNch9D0
+!s100 c7I<cR8J7lGKEjI9jk27b3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Aflow
+R1
+R2
+R3
+DEx4 work 10 flow_check 0 22 26TK?D8TN`ComdcXNch9D0
+!i122 310
+l75
+L71 12
+VeQ>A>PR?][`9b[=J?9eHl1
+!s100 jBcLBATc[06GHW=mNDK?81
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Enes
+Z20 w1795641563
+R2
+R3
+!i122 309
+R4
+Z21 8C:/Users/kftsh/Documents/FPGA NES/NES.vhd
+Z22 FC:/Users/kftsh/Documents/FPGA NES/NES.vhd
+l0
+L7 1
+VNia]j:0Z=QLn6GjV3?5[13
+!s100 `2Qko8Cl@?lhzF?DgKV>k3
+R7
+32
+R8
+!i10b 1
+Z23 !s108 1795864032.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/kftsh/Documents/FPGA NES/NES.vhd|
+Z25 !s107 C:/Users/kftsh/Documents/FPGA NES/NES.vhd|
+!i113 1
+R19
+R13
+Anes_arch
+R2
+R3
+DEx4 work 3 nes 0 22 Nia]j:0Z=QLn6GjV3?5[13
+!i122 309
+l20
+L16 10
+VY<^67KgC^C11YzZ^io02R0
+!s100 zWcSz_0VNO:X29BiW9kN[1
+R7
+32
+R8
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R19
+R13
+Eram
+Z26 w1795637403
+R1
+R2
+R3
+!i122 313
+R4
+Z27 8C:/Users/kftsh/Documents/FPGA NES/src/cpu/ram.vhd
+Z28 FC:/Users/kftsh/Documents/FPGA NES/src/cpu/ram.vhd
+l0
+L9 1
+V?PLTZVY?2_`CSIeMci_5c3
+!s100 n]OIlhaNVbR^C5znRR2C91
+R7
+32
+Z29 !s110 1795864034
+!i10b 1
+Z30 !s108 1795864034.000000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/kftsh/Documents/FPGA NES/src/cpu/ram.vhd|
+Z32 !s107 C:/Users/kftsh/Documents/FPGA NES/src/cpu/ram.vhd|
+!i113 1
+R19
+R13
+Areg
+R1
+R2
+R3
+Z33 DEx4 work 3 ram 0 22 ?PLTZVY?2_`CSIeMci_5c3
+!i122 313
+l32
+Z34 L23 23
+Z35 Vij<a6`WlVX=n6n4>D<c4=0
+Z36 !s100 D=z0NWHjhOjXNn2i=57BD0
+R7
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R19
+R13
+Eram_test
+Z37 w1795701753
+R1
+R2
+R3
+!i122 312
+R4
+Z38 8C:/Users/kftsh/Documents/FPGA NES/src/cpu/ram_test.vhd
+Z39 FC:/Users/kftsh/Documents/FPGA NES/src/cpu/ram_test.vhd
+l0
+L5 1
+V3Mm:9CnUL`D`O32GZCSk>2
+!s100 [6J_jd9eG66eGN_PKdL6N2
+R7
+32
+R29
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/kftsh/Documents/FPGA NES/src/cpu/ram_test.vhd|
+Z41 !s107 C:/Users/kftsh/Documents/FPGA NES/src/cpu/ram_test.vhd|
+!i113 1
+R19
+R13
+Ar
+R1
+R2
+R3
+DEx4 work 8 ram_test 0 22 3Mm:9CnUL`D`O32GZCSk>2
+!i122 312
+l37
+L10 67
+VDDCeeZ=n1mnRoJ6U8^V1N1
+!s100 X3>7lgi2FfnmbI_a^nD<R1
+R7
+32
+R29
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R19
+R13

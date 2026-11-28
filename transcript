@@ -1,0 +1,82 @@
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd failed with 1 errors.
+# Compile of cpu_test.vhd failed with 1 errors.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# 5 compiles, 2 failed with 2 errors.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd failed with 1 errors.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# 5 compiles, 1 failed with 1 error.
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.cpu_test
+# vsim -gui work.cpu_test 
+# Start time: 13:02:03 on Nov 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cpu_test(test)
+# Loading work.cpu(processor)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/PPU_ENABLE has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/CART_ENABLE has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position end  sim:/cpu_test/clock
+add wave -position end  sim:/cpu_test/d
+add wave -position end  sim:/cpu_test/a
+add wave -position end  sim:/cpu_test/b
+add wave -position end  sim:/cpu_test/c
+add wave -position end  sim:/cpu_test/p
+run
+# Compile of NES.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of cpu_test.vhd was successful with warnings.
+# Compile of ram_test.vhd was successful with warnings.
+# Compile of ram.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.cpu_test(test)
+# Loading work.cpu(processor)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/PPU_ENABLE has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/CART_ENABLE has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OE1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OE2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OUT1 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OUT2 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/OUT3 has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu_test/dut/AD2 has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 13:08:34 on Nov 28,2026, Elapsed time: 0:06:31
+# Errors: 0, Warnings: 9

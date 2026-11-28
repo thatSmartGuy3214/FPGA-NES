@@ -1,4 +1,4 @@
 |NES
-clk => ~NO_FANOUT~
+master_clk => ~NO_FANOUT~
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for NES
-Tue Nov 24 21:08:00 2026
+Thu Nov 26 17:05:59 2026
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Nov 24 21:08:00 2026          ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 26 17:05:59 2026          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; NES                                            ;
 ; Top-level Entity Name              ; NES                                            ;
@@ -173,35 +173,35 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+-------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 1     ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 1     ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+;                                             ;            ;
+; Total combinational functions               ; 0          ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 0          ;
+;     -- 3 input functions                    ; 0          ;
+;     -- <=2 input functions                  ; 0          ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 0          ;
+;     -- arithmetic mode                      ; 0          ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 1          ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; master_clk ;
+; Maximum fan-out                             ; 1          ;
+; Total fan-out                               ; 1          ;
+; Average fan-out                             ; 0.50       ;
++---------------------------------------------+------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -256,26 +256,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Tue Nov 24 21:07:49 2026
+    Info: Processing started: Thu Nov 26 17:05:51 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off NES -c NES
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (12021): Found 0 design units, including 0 entities, in source file src/apu/apu.vhd
+Info (12021): Found 0 design units, including 0 entities, in source file src/cartridge/programrom.vhd
+Info (12021): Found 0 design units, including 0 entities, in source file src/cartridge/mapper.vhd
+Info (12021): Found 0 design units, including 0 entities, in source file src/cartridge/chrrom.vhd
+Info (12021): Found 0 design units, including 0 entities, in source file src/cartridge/chrram.vhd
+Info (12021): Found 0 design units, including 0 entities, in source file src/cartridge/cartridge.vhd
+Info (12021): Found 0 design units, including 0 entities, in source file src/ppu/vram.vhd
+Info (12021): Found 0 design units, including 0 entities, in source file src/ppu/ppu.vhd
+Info (12021): Found 4 design units, including 2 entities, in source file src/cpu/cpu.vhd
+    Info (12022): Found design unit 1: flow_check-flow File: C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu.vhd Line: 71
+    Info (12022): Found design unit 2: CPU-processor File: C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu.vhd Line: 85
+    Info (12023): Found entity 1: CPU File: C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu.vhd Line: 11
+    Info (12023): Found entity 2: flow_check File: C:/Users/kftsh/Documents/FPGA NES/src/cpu/cpu.vhd Line: 59
 Info (12021): Found 2 design units, including 1 entities, in source file nes.vhd
     Info (12022): Found design unit 1: NES-NES_arch File: C:/Users/kftsh/Documents/FPGA NES/NES.vhd Line: 16
     Info (12023): Found entity 1: NES File: C:/Users/kftsh/Documents/FPGA NES/NES.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file src/cpu/ram.vhd
+    Info (12022): Found design unit 1: RAM-reg File: C:/Users/kftsh/Documents/FPGA NES/src/cpu/ram.vhd Line: 23
+    Info (12023): Found entity 1: RAM File: C:/Users/kftsh/Documents/FPGA NES/src/cpu/ram.vhd Line: 9
 Info (12127): Elaborating entity "NES" for the top level hierarchy
-Warning (12158): Entity "NES" contains only dangling pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/kftsh/Documents/FPGA NES/NES.vhd Line: 9
+    Warning (15610): No output dependent on input pin "master_clk" File: C:/Users/kftsh/Documents/FPGA NES/NES.vhd Line: 9
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4827 megabytes
-    Info: Processing ended: Tue Nov 24 21:08:00 2026
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Thu Nov 26 17:05:59 2026
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:19
 
 

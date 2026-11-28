@@ -14,14 +14,14 @@ entity RAM is
 		RD : in std_logic;
 		WRT : in std_logic;
 		ENABLE : in std_logic;
-		RST : in std_logic;
+		RST : in std_logic
 	);
 
 end RAM;
 
 
 architecture reg of RAM is
-	type mem is array (0 to 2047) of std_logic_vector (7 downto 0) := "00000000"; -- 2KB memory
+	type mem is array (0 to 2047) of std_logic_vector (7 downto 0); -- 2KB memory
 	signal data : mem;
 	signal loc : integer range 0 to 2047;
 	signal output : std_logic_vector (7 downto 0);
